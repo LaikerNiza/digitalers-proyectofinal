@@ -8,7 +8,7 @@
     <title>My Personal Blog</title>
 <body class="bg-dark text-success">
     <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-lg bg-dark ">
+    <nav class="navbar sticky-top navbar-expand-lg bg-dark ">
       <div class="container-fluid">
           <a class="navbar-brand text-white" href="#">Mi Blog Personal</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,9 @@
       </div>
       </div>
   </nav>
-    <div class="g-start-2" style="grid-row: 2" style="width: 500px; height: 800px; ">
+  <div class="container mt-5">
+    <div class="d-flex text-success justify-content-center row">
+    <h2> Registrarse</h2>
     <form class="row g-3">
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">Email</label>
@@ -321,5 +323,31 @@
         <button type="submit" class="btn btn-success">Ingresar</button>
       </div>
     </form>
+
+    <footer class="sticky-bottom" id="footer">
+      <ul class="nav justify-content-center">
+          <li class="nav-item">
+              <a class="nav-link text-success" aria-current="page" href="https://github.com/LaikerNiza">
+                  <img src="/media/btn-img/github.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-success" href="https://twitter.com/laiker_ni">
+                  <img src="/media/btn-img/gorjeo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-success" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-success">Disabled</a>
+          </li>
+      </ul>
+      
+      <ul class="nav justify-content-end">
+          <li class="nav-item text-success">
+          ©Niza Laiker
+          </li>
+      </footer>
 </body>
 </html>
