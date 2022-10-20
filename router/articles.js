@@ -44,4 +44,8 @@ function saveArticleAndRedirect(path){
     }
 }
 
+app.use('/', require('./router/articles'));
+app.use('/mascotas', require('./router/articles'));
+
+
 module.exports = router;

@@ -23,3 +23,4 @@ app.use((req, res, next) => {
 app.listen(port, () => {
     console.log('servidor a su servicio en el puerto', port)
 })
+app.use('/app', require('./router/articles'));
