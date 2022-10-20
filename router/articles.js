@@ -2,6 +2,18 @@ const express = require('express')
 //const Article = require('../models/article')
 const router = express.Router()
 
+router.get('/',(req,res)=>{
+    //console.log(__direname)
+    res.render("index", {titulo:"mi titulo dinámico"})
+})
+
+router.get('/servicios',(req, res)=>{
+    res.render("servicios",{
+        tituloServicio:"Este es un mensaje dinamico"
+    })
+})
+
+
 
 router.get('/new', (req, res)=>{
     res.render('articles/new', {article: new Article()})
